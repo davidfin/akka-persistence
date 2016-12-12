@@ -60,3 +60,10 @@ fromSnapshot:  snapshot selection  (latest snapshot is default)
 toSequenceNr: defines an upper bound to restore an earlier state, by default Long.MaxValue is used
 
 Useful values accessible bby persistentActors: lastSequenceNr and snapshotSequenceNr. 
+
+## Exercise 
+1. Implement PlayerRegistry as a persistent actor 
+ 1. implement receiveCommand, playerNameTaken, persist in registerPlayer, receiveRecover, saveSnapShot for every 100 players.
+2. In PlayerSharding.scala , implement Player as a persistent actor. 
+ 1. receiveCommand, receiveRecover. 
+
